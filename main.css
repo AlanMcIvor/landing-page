@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --dark-blue: #1f2937;
+    --blue: #3882f6;
+    --text-main: #f9faf8;
+    --text-secondary: #e5e7eb;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header */
+
+header{
+    width: 100%;
+    background: var(--dark-blue);
+    color: #fff;
+}
+
+nav{
+    margin: 0 200px;
+    padding: 10px 0;
+}
+
+.nav-links{
+    list-style: none;
+    width: 30%;
+}
+
+.nav-links a{
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--text-secondary)
+}
+
+.logo{
+    font-size: 24px;
+    color: var(--text-main);
+}
+
+/* hero */
+
+.hero{
+    padding: 0 200px;
+    min-height: 70dvh;
+    background: var(--dark-blue);
+}
+
+.hero-title{
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--text-main);
+}
+
+.hero-content{
+    font-size: 18px;
+    color: var(--text-secondary)
+}
+
+.cta-btn{
+    padding: 5px 25px;
+    border-radius: 5px;
+    background: var(--blue);
+    color: var(--text-main);
+    border: none;
+    outline: none;
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+/* info */
+
+.info-title{
+    text-align: center;
+    margin: 50px 0;
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--dark-blue)
+}
+
+.info-container{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card{
+    margin: 50px 0 150px 0;
+}
+
+.card-image{
+    border: 3px solid var(--blue);
+    border-radius: 5px;
+    height: 200px;
+    width: 175px;
+}
+
+.card-text{
+    margin-top: 5px;
+    max-width: 175px;
+    text-align: center;
+}
+
+/* quote */
+
+.quote{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 50dvh;
+    background: var(--text-secondary);
+}
+
+.quote q{
+    display: block;
+    font-weight: 300;
+    font-size: 36px;
+    font-weight: 400;
+    font-style: italic;
+ 
+}
+
+.quote p{
+   font-size: 18px;
+    text-align: end;
+}
+
+/* sign up */
+
+.sign-up{
+    min-height: 30dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-up-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--blue);
+    width: 70%;
+    min-height: 125px;
+    border-radius: 5px;
+    color: var(--text-main);
+}
+
+.btn{
+    border: 2px solid white;
+}
+
+/* footer */
+
+.footer{
+    background: var(--dark-blue);
+    color: var(--text-main);
+}
+
+.footer p{
+    padding: 25px;
+    text-align: center;
+}
+/* flex utility */
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
